@@ -56,7 +56,7 @@ class LocationService {
             _locationController.add(UserLocation(
                 latitude: locationData.latitude,
                 longitude: locationData.longitude,
-                address: "${placemark[0].name},${placemark[0].subLocality},${placemark[0].locality},${placemark[0].administrativeArea} ${placemark[0].postalCode},${placemark[0].country}"
+                address: "${placemark[0].thoroughfare} ${placemark[0].subThoroughfare},${placemark[0].subLocality},${placemark[0].locality},${placemark[0].subAdministrativeArea},${placemark[0].administrativeArea} ${placemark[0].postalCode},${placemark[0].country}"
             ));
           }
         });
